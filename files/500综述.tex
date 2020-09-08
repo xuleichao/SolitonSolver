@@ -2,6 +2,7 @@
 \usepackage[UTF8, scheme = plain]{ctex}
 \usepackage{multicol}
 \usepackage{fontspec}
+\usepackage{cite}
 
 \begin{document}
 
@@ -22,19 +23,17 @@
 \end{abstract}
 \begin{multicols}{2}
 \section{Indroduction}
-孤子最开始来源于水波波峰长时间保持形状传播，之后产生了非线性的研究，即孤子解属于非线性系统的解。对于微观系统，如玻色爱因斯坦系统（BEC），非线性周期系统，会产生孤子解，同时相同带隙中的孤子解与对应非线性布洛赫波有对应关系\cite{ref1}。而对于宏观系统，孤子解依然可以解释一些自然现象，例如对黑洞中孤子的研究\cite{ref2}，海洋中鱼群与孤子的关系\cite{ref3}，高速运行的火车头部的空气研究\cite{ref4}。无论在微观领域还是宏观领域，孤子的研究与应用非常广泛，本篇综述将从孤子的研究现状，研究应用，以及当前孤子研究的新方向与新领域做大致的阐述，一方面作为文献摘要阅读的总结，也为孤子研究的方向确定做总结，该综述的严谨性会比较差，有错误的对方或者有争议的地方，望指出或一起讨论。
+孤子最开始来源于水波波峰长时间保持形状传播，之后产生了非线性的研究，即孤子解属于非线性系统的解。对于微观系统，如玻色爱因斯坦系统（BEC），非线性周期系统，会产生孤子解，同时相同带隙中的孤子解与对应非线性布洛赫波有对应关系\cite{Zhang.2009}。而对于宏观系统，孤子解依然可以解释一些自然现象，例如对黑洞中孤子的研究\cite{dymnikova2020regular}，海洋中鱼群与孤子的关系\cite{soliton_russion}，高速运行的火车头部的空气研究\cite{soliton_russion}。无论在微观领域还是宏观领域，孤子的研究与应用非常广泛，本篇综述将从孤子的研究现状，研究应用，以及当前孤子研究的新方向与新领域做大致的阐述，一方面作为文献摘要阅读的总结，也为孤子研究的方向确定做总结，该综述的严谨性会比较差，有错误的对方或者有争议的地方，望指出或一起讨论。
 
 %孤子研究现状
 \section{孤子研究现状}
-孤子研究大致可以分为两个方向，第一是理论研究与数值模拟，第二是实验研究。{todo1}
+孤子研究大致可以分为两个方向，第一是理论研究与数值模拟，第二是实验研究。数值模拟围绕求解非线性薛定谔方程来得到孤子解，然后对孤子的稳定性展开叙述。对孤子的求解不仅限于亮孤子，而且还有暗孤子，暗孤子只孤子解为凹陷型。对于孤子的求解，本质上是求解非线性薛定谔方程，有人也致力于求解精确的解析解\cite{2020Exact,inproceedings}，这类问题偏向于数学方向，对于物理研究，数值解应该是首选，毕竟物理是要解释现象。得到孤子解后就需要讨论孤子解的稳定性，不稳定孤子在实验中难以观测，在一定时间内可以保持固定形状的孤子被称为稳定孤子，而不稳定的孤子也有其特性，例如有研究孤子超光速但是具有不稳定性\cite{1937-1632_2020_8_2285}，孤子的稳定性研究同样有数值模拟微扰法。数值方法有分步傅里叶方法，通过该方法可以直观的看到孤子随时间的演化。
 \end{multicols}
 %参考文献
-\begin{thebibliography}{99}  
-\bibitem{ref1}Zhang, Y. P.; Wu, B. (2009): Composition Relation between Gap Solitons and Bloch Waves in Nonlinear Periodic Systems. In Physical review letters 102 (9). 
-\bibitem{ref2}Dymnikova I . Regular black holes and self-gravitating solitons with DE interiors[J]. International Journal of Modern Physics A, 2020, 35(02n03):63-.
-\bibitem{ref3}10.31857/S2686739720060031
-\bibitem{ref4}10.31857/S2686739720060031
-\end{thebibliography}
-\footnote{ref3,ref4为俄文文献，字符集不支持显示，所以给出了doi号码} 
-\end{document}
 
+\bibliographystyle{unsrt}%
+
+\bibliography{bibfile}
+\footnote{[3]为俄文文献，字符集不支持显示，所以给出了doi号码} 
+
+\end{document}
